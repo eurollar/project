@@ -1,8 +1,9 @@
 from django.shortcuts import render
 
 
+def main_page(request):
+    return render(request, 'room/index.html')
+
+
 def room(request):
-    arr = ['123', '345', '567']
-    context = {'users': arr, 'admin': 'sassr'}
-    return render(request, 'room/index.html', context)
-# Create your views here.
+    return render(request, 'room/info-room.html')
