@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Rooms template</h1>
+        {{ users }}<br>
+        {{ admin }}<br>
+    {% for user in users %}
+        {% if user.0 == '3' %}
+            <h1><p><i>{{ user }}</i></p></h1>
+        {% else %}
+            <p><i>{{ user }}</i></p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
